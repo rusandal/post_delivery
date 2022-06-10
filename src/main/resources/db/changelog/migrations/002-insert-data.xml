@@ -1,0 +1,17 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <changeSet id="insert_data" author="ruslan">
+        <insert tableName="post_office">
+            <column name="address" value="г. Казань ул. Кремлевская д.1"/>
+            <column name="name" value="Почта номер 1"/>
+            <column name="post_index" value="222222"/>
+        </insert>
+        <insert tableName="post_office">
+            <column name="address" value="г. Москва ул. Кремлевская д.1"/>
+            <column name="name" value="Почта номер 0"/>
+            <column name="post_index" value="111111"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

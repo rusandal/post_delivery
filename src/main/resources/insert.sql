@@ -1,0 +1,1 @@
+INSERT INTO post_office (address, name) VALUES ("")

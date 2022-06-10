@@ -1,0 +1,15 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
+    <changeSet id="create_post_office" author="ruslan">
+        <createTable tableName="post_office">
+            <column name="id" type="serial" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="address" type="varchar(255)"/>
+            <column name="name" type="varchar(255)"/>
+            <column name="post_index" type="int"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
